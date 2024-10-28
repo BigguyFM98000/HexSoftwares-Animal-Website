@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Charity Organization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="smoothScroll('#home')">Home</a></li>
+                <li><a href="#mission" onclick="smoothScroll('#mission')">Our Mission</a></li>
+                <li><a href="#programs" onclick="smoothScroll('#programs')">Programs</a></li>
+                <li><a href="#donate" onclick="smoothScroll('#donate')">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <h1>Welcome to Animal Care</h1>
+        <p>Helping animals in need with love and compassion.</p>
+        <img src="images/dog-owner-unsplash.jpg" width="640" />
+     </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section">
+        <h2>Our Mission</h2>
+        <p>We are dedicated to rescuing, rehabilitating, and rehoming animals in need, and to spreading awareness about animal welfare.</p>
+        <img src="images/dog-race-unsplash.jpg" width="640" />
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="section">
+        <h2>Our Programs</h2>
+        <div class="programs-content">
+            <div class="program-item">
+                <h3>Rescue Operations</h3>
+                <p>Saving animals from dangerous and abusive situations.</p>
+            </div>
+            <div class="program-item">
+                <h3>Medical Care</h3>
+                <p>Providing medical treatment and rehabilitation to injured animals.</p>
+            </div>
+            <div class="program-item">
+                <h3>Adoption Services</h3>
+                <p>Finding loving homes for rescued animals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="section">
+        <h2>Ways to Donate</h2>
+        <p>Your donations help us save lives. Choose a way to give and make a difference.</p>
+        <div class="donate-content">
+            <div class="donate-item">
+                <h3>One-Time Donation</h3>
+                <p>Make a one-time contribution to support our programs.</p>
+                <button onclick="donateAlert()">Donate Now</button>
+            </div>
+            <div class="donate-item">
+                <h3>Monthly Sponsorship</h3>
+                <p>Provide continuous support for ongoing rescues and care.</p>
+                <button onclick="donateAlert()">Sponsor</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fhatuwani Martin Raphalalani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
